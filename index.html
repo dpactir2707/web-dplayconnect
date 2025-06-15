@@ -23,13 +23,7 @@
       border-bottom: 3px solid #9146ff;
       flex-wrap: wrap;
     }
-  @media (max-width: 600px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
+ 
     header h1 {
       margin: 0;
       color: #9146ff;
@@ -112,9 +106,21 @@
   }
 
     @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
       nav {
-        display: flex;
-        gap: 1rem;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      header h1 {
+        flex: unset;
+        margin-left: 0;
+        margin-top: 1rem;
       }
     }
   </style>
